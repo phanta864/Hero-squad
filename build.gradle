@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+archivesBaseName = "herosquad"
+mainClassName = 'App'
+applicationName="herosquad"
+group 'com.memesnet'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.sparkjava', name:'spark-core', version: '2.5'
+    compile 'com.sparkjava:spark-template-velocity:2.5.5'
+}
+
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installApp'])
