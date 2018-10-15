@@ -2,7 +2,7 @@ import static  org.junit.Assert.*;
 import org.junit.Test;
 
 public class HeroTest {
-    Hero superman = new Hero("superman", 105, "lazereye", "ladies",8, 9);
+    Hero superman = new Hero("epha", 20, "words", "silence",8, 9);
 
     @Test
     public void hero_returnsInstancObject_Object(){
@@ -19,17 +19,17 @@ public class HeroTest {
     @Test
     public void hero_checkWhetherHeroHasName_String(){
 
-        assertEquals("superman", superman.getName());
+        assertEquals("epha", superman.getName());
     }
 
     @Test
     public void hero_checkWhetherHeroHasPower_string(){
 
-        assertEquals("lazereye", superman.getPower());
+        assertEquals("words", superman.getPower());
     }
     @Test
     public void hero_checkWhetherHeroHasAge_Integer(){
-        Integer age = 105;
+        Integer age = 20;
         assertEquals(age, superman.getAge());
     }
 }

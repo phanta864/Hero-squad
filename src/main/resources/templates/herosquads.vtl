@@ -3,7 +3,7 @@
   #if ($herosquads)
     <ul>
     #foreach ($herosquad in $herosquads)
-          <li><a href="/herosquads/$herosquad.getId()" class="btn btn-outline-dark">$herosquad.getName()</a></li>
+          <li><a href="/herosquads/$herosquad.getId()">$herosquad.getName()</a></li>
     #end
   </ul>
     #else

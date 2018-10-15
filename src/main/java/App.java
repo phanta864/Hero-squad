@@ -46,7 +46,7 @@ public class App {
             String weakness = request.queryParams("weakness");
             int  defense = Integer.parseInt(request.queryParams("defense"));
             int  distanceAttack = Integer.parseInt(request.queryParams("distanceAttack"));
-            Hero newHero = new Hero(name, age, power, weakness, defense, distanceAttack);
+            Hero hero = new Hero(name, age, power, weakness, defense, distanceAttack);
 
             model.put("template", "templates/success.vtl");
             return modelAndView(model, layout);
